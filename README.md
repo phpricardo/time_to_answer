@@ -1,24 +1,5 @@
-# README
+# APP Time To Answer 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Course RoR 5.x by Jackson Pires
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application will be necessary to answer several questions.
