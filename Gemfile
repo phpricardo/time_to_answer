@@ -20,6 +20,8 @@ gem 'tty-spinner'
 gem 'rails-i18n', '~> 5.1'
 gem 'devise'
 gem 'faker'
+gem 'kaminari'
+gem 'kaminari-i18n'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

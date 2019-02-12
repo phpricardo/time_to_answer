@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
   namespace :admins_backoffice do
     get 'welcome/index' #Dashboard
-    resources :admins, only: [:index, :edit, :update] #administradores
+    resources :admins #administradores
   end
   
   devise_for :admins
@@ -16,5 +16,4 @@ Rails.application.routes.draw do
   get 'inicio', to: 'site/welcome#index'
 
   root to: 'site/welcome#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
