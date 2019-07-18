@@ -65,7 +65,7 @@ namespace :dev do
             answers_array = params[:question][:answers_attributes]
 
             add_answers(answers_array)
-            elect_true_answer(answers_array)
+            select_true_answer(answers_array)
 
             Question.create!(params[:question])
         end
@@ -95,7 +95,7 @@ namespace :dev do
     end
   end
 
-  def elect_true_answer(answers_array = [])
+  def select_true_answer(answers_array = [])
     selected_index = rand(answers_array.size)
     answers_array[selected_index] = create_answer_params(true)
   end

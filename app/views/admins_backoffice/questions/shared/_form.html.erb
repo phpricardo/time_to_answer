@@ -37,6 +37,16 @@
                             <%= form.label :subject_id %>
                             <%= form.collection_select(:subject_id, @subjects, :id, :description, {}, { class: "form-control"}) %>
                         </div>
+
+                        <div id="answers">
+                            <%= form.fields_for :answers do |answer| %>
+                                <%= render partial: "answer_fields", locals: { f: answer } %>
+                            <% end %>
+                            <div class="link">
+                                <%= link_to_add_association '[Adicionar Resposta]', form, :answers %>
+                            </div>
+                        </div>
+
                         <button type="submit" class="btn btn-default">
                             <%= t('button.save') %>
                         </button>

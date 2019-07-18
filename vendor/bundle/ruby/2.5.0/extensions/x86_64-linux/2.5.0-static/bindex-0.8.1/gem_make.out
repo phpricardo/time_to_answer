@@ -1,0 +1,15 @@
+current directory: /home/ricardo/Projetos/time_to_answer/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/home/ricardo/.asdf/installs/ruby/2.5.1/bin/ruby -r ./siteconf20190714-8695-p8n5bx.rb extconf.rb
+creating Makefile
+
+current directory: /home/ricardo/Projetos/time_to_answer/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/ricardo/Projetos/time_to_answer/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/ricardo/Projetos/time_to_answer/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190714-8695-1u0vqpx/skiptrace/internal
