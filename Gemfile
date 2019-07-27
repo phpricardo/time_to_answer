@@ -21,6 +21,7 @@ gem 'cocoon'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rails_db', '2.0.4'
 end
 
 group :development do
