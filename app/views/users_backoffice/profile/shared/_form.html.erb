@@ -38,8 +38,7 @@ col-xs-12" %>
             </div>
           </div>
           <div class="form-group">
-            <%= form.label :email, class:"control-label col-md-3 col-sm-3 col-xs-12"
-%>
+            <%= form.label :email, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
             <div class="col-md-6 col-sm-6 col-xs-12">
               <%= form.text_field :email,
  class:"form-control col-md-7 col-xs-12", readonly: true %>
@@ -55,7 +54,6 @@ col-xs-12" %>
               </div>
             </div>
 
-
             <div class="form-group">
               <%= profile_form.label :gender, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
               <div class="col-md-6 col-sm-6 col-xs-12">
@@ -70,32 +68,25 @@ col-xs-12" %>
               </div>
             </div>
 
-
             <div class="form-group">
               <%= profile_form.label :birthdate, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <%= profile_form.text_field :birthdate, value: l(@user.user_profile.birthdate),
+                <%= profile_form.text_field :birthdate, value: (l(@user.user_profile.birthdate) unless @user.user_profile.birthdate.blank?),
                       class:"form-control col-md-7 col-xs-12 datepicker" %>
               </div>
             </div>
           <% end %>
 
           <div class="form-group">
-            <%= form.label :password, class:"control-label col-md-3 col-sm-3
-col-xs-12" %>
+            <%= form.label :password, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <%= form.password_field :password,
- class:"form-control col-md-7 col-xs-12",
- placeholder: t('placeholder.admin_password') %>
+              <%= form.password_field :password, class:"form-control col-md-7 col-xs-12", placeholder: t('placeholder.admin_password') %>
             </div>
           </div>
           <div class="form-group">
-            <%= form.label :password_confirmation, class:"control-label col-md-3
-col-sm-3 col-xs-12" %>
+            <%= form.label :password_confirmation, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <%= form.password_field :password_confirmation,
- class:"form-control col-md-7 col-xs-12",
- placeholder: t('placeholder.admin_password_confirmation') %>
+              <%= form.password_field :password_confirmation, class:"form-control col-md-7 col-xs-12", placeholder: t('placeholder.admin_password_confirmation') %>
             </div>
           </div>
           <div class="ln_solid"></div>
