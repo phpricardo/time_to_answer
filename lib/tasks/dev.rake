@@ -30,9 +30,11 @@ namespace :dev do
   desc "Adiciona o usuário padrão"
     task add_default_user: :environment do
       User.create!(
+        first_name: 'first name',
         email: 'user@user.com',
         password: PASSWORD_DEFAULT,
-        password_confirmation: PASSWORD_DEFAULT
+        password_confirmation: PASSWORD_DEFAULT,
+        first_name: 'usuario padrao'
       )
     end
 

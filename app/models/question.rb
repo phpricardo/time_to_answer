@@ -6,6 +6,9 @@ class Question < ApplicationRecord
   # pagination with kaminari
   paginates_per 5
 
+  # callback
+  after_create :set_statistic
+
   scope :_search_subject_, -> (page, subject_id){
     includes(:answers, :subject)
     .where(subject_id: subject_id)
@@ -21,5 +24,11 @@ class Question < ApplicationRecord
   scope :last_questions, -> (page) {
     includes(:answers).order('created_at desc').page(page)
   }
+
+  private
+  
+  def set_statistic
+    AdminStatistic.set_event(AdminStatistic::EVENTS[:total_questions])
+  end
 
 end
