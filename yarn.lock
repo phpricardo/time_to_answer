@@ -53,3 +53,8 @@ nprogress@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
   integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
+rails-ujs@^5.2.4-1:
+  version "5.2.4-1"
+  resolved "https://registry.yarnpkg.com/rails-ujs/-/rails-ujs-5.2.4-1.tgz#8005323a71d22b1456a9ddd9ca1b0148007fa6e0"
+  integrity sha512-qKxLeisxyWVHx1nnRv9GWA7pjMQ0oTyzRLoYLbZGaxr6vDtMxQ27wO8qfj3vpzc5FkrVbDpZqvTklDznaDVgAQ==
